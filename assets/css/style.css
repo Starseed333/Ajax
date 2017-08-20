@@ -1,0 +1,15 @@
+body{
+	background-image: url("https://uberblogapi.10upcdn.com/wp-content/uploads/sites/23/2012/09/Dallas-skyline.jpeg");
+
+}
+
+h2{
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+}
+
+input{
+	width: 350px;
+	height: 30px;
+}
