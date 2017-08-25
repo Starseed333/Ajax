@@ -90,6 +90,33 @@
 
 
     });
+
+     var type = "frozen";
+     var queryURL = "http://www.omdbapi.com/?t=" + type + "&y=&plot=short&apikey=40e9cece";
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).done(function(response) {
+
+      var thirdRowTds = $("table")
+      .children()
+      .eq(2)
+      .children("tr")
+      .eq(2)
+      .children("td");
+
+
+      thirdRowTds.eq(0).text(response.Title);
+      thirdRowTds.eq(1).text(response.Year);
+      thirdRowTds.eq(2).text(response.Actors);
+      console.log(response);
+
+
+
+    });
+
+
     // Step 2: copy the above and try and figure out what to change to fill in the
     // second row.
 
